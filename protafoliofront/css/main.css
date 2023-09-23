@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "InclusiveSans";
+    src: url("../font/InclusiveSans-Regular.ttf") format("truetype");
+  }
+
+:root {
+    --SectionTitleColor: #000000;
+    --SecondaryBGColor: #E0E1DD;
+    --SectionTitleSize: 1.5rem;
+    --WelcomeTitletextSize: 4rem;
+    --PhotoBorderRadius: 50px;
+    --TextInputSize: 1.2rem;
+    --InputBorderRadius: 15px;
+    --TextWeight: 600;
+    --BoxShadowImage: -5px 5px 5px rgba(19, 18, 18, 0.5);
+}
+
+@media screen and (max-width:590px) {
+    :root {
+        --SectionTitleSize: 1.3rem;
+        --WelcomeTitletextSize: 1.8rem;
+        --TextInputSize: 1rem;
+    }
+}
+
+main {
+    padding-top: 90px;
+}
+
+.border-radius-img{
+    border-radius: 90px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.centrado {
+    align-items: center;
+}
+
+.title-of-section {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--SectionTitleColor);
+    font-size: var(--SectionTitleSize);
+    box-shadow: 0px 4px 6px rgba(19, 18, 18, 0.4);
+}
+
+.tamaño {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    color:black;
+    justify-content: center;
+    background-color: var(--SecondaryBGColor);
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--SecondaryBGColor);
+}
+
+#welcome-title {
+    margin: 20px;
+    font-size: var(--WelcomeTitletextSize);
+}
+
+.personal-information {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+@media screen and (max-width:780px) {
+    .personal-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+#my-photo {
+    width: 180px;
+    height: 241px;
+    justify-content: center;
+    border-radius: var(--PhotoBorderRadius);
+    margin: 10px;
+    box-shadow: var(--BoxShadowImage);
+}
+
+#my-information {
+    margin: 15px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.lenguajes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    width: 70%;
+}
+
+@media screen and (max-width:420px) {
+    .lenguajes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.lenguajes div {
+    width: 50%;
+}
+
+.lenguajes-list {
+    display: flex;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.languaje-icon {
+    width: 70px;
+    height: auto;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: var(--BoxShadowImage);
+}
+
+.languaje-icon-rotate:hover .languaje-icon{
+    transform: rotate(10deg) translate(0px, 0px);
+}
+
+.no-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.border {
+    border-bottom: 4px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.flecha {
+    stroke: var(--SeeMoreSVGColor);
+    stroke-width: 3px;
+    width: 25px;
+    fill: none;
+    transform: rotate(360deg) translate(2px, 1px);
+    transition: all 0.3s ease;
+}
+
+.see-more-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    font-weight: var(--TextWeight);
+    width: 113px;
+    height: 35px;
+    font-size: var(--TextInputSize);
+    border-radius: var(--InputBorderRadius);
+    margin: 10px;
+    background-color: #565dc1;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: var(--BoxShadowImage);
+}
+
+.see-more-button:hover .flecha {
+    margin-left: 3px;
+}
+
+.see-more-button:hover {
+    width: 116px;
+}
+
+@media screen and (max-width:590px) {
+    .see-more-button {
+
+        width: 100px;
+        height: 30px;
+
+    }
+
+    .see-more-button:hover .flecha {
+        margin-left: 3px;
+    }
+
+    .see-more-button:hover {
+        width: 103px;
+    }
+
+}
+
+.see-more-text {
+    margin-left: 13px;
+}
+
+.margen-abajo {
+    margin-bottom: 30px;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.logos {
+    width: 150px;
+    height: 150px;
+    margin: 7px;
+    box-shadow: var(--BoxShadowImage);
+    transition: all 0.3s ease;
+}
+
+.logos:hover{
+    transform: rotate(360deg) translate(0px, 0px);
+}
+
+@media screen and (max-width:440px) {
+    .logos{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.about-information {
+    display: flex;
+    flex-direction: row;
+}
+
+@media  screen and (max-width:510px) {
+    .about-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.border-image-radius{
+    border-radius: var(--InputBorderRadius);
+}

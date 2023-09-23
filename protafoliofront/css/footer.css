@@ -1,0 +1,162 @@
+:root{
+    --BGColor: #000000;
+    --TextInputSize: 1.2rem;
+    --InputBorderRadius:15px;
+    --TextWeight: 600;
+}
+@media screen and (max-width:590px) {
+    :root {
+        --TextInputSize: 1rem;
+    }
+}
+footer{
+    font-weight: var(--TextWeight);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BGColor);
+}
+
+.f-centrado{
+    text-align: center;
+    margin: 50px;
+}
+
+#send{
+    cursor: pointer;
+    font-weight: var(--TextWeight);
+    width: 100px;
+    height: 35px;
+    font-size: var(--TextInputSize);
+    border-radius: var(--InputBorderRadius);
+}
+
+.form-input-size{
+    height: 35px;
+    width: 300px;
+}
+.form-textarea-size{
+    width: 300px;
+    resize: none;
+}
+.form-margin{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.form-border{
+    border-radius: var(--InputBorderRadius);
+}
+.form-font{
+    font-weight: var(--TextWeight);
+    font-size: var(--TextInputSize);
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.copy{
+    margin: 20px;
+}
+
+.form-title{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa-facebook {
+    background:#1877f2;
+
+} 
+ 
+.fa-github {
+    background:white;
+}
+ 
+.fa-x-twitter {
+    background: darkgray;
+}
+ 
+.fa-google{
+    background: #f85a5a;
+}
+ 
+.fa-linkedin {
+    background: #2a66e9;
+}
+ 
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: left ;
+    justify-content: center;
+}
+ 
+.redes i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+ 
+.redes a {
+    text-decoration: none;
+}
+ 
+.redes i:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+    opacity: .9;
+}
+
+.footer-div-margin-right{
+    margin-right: 10%;
+}
+
+.footer-div-margin-left{
+    margin-left: 10%;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.circular-icon{
+    border-radius: 90px;
+}
+
+@media screen and (max-width:870px){
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-div-margin-right{
+        margin-right: 0px;
+    }
+    
+    .footer-div-margin-left{
+        margin-left: 0px;
+    }
+    
+    .form-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .social-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+}
